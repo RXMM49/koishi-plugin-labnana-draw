@@ -1,0 +1,58 @@
+{
+  "name": "koishi-plugin-labnana-draw",
+  "version": "1.0.0",
+  "description": "Koishi plugin for Labnana AI image generation with text-to-image and image-to-image support",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "koishi",
+    "plugin",
+    "ai",
+    "image-generation",
+    "labnana",
+    "drawing",
+    "text-to-image",
+    "image-to-image"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/koishi-plugin-labnana-draw"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/koishi-plugin-labnana-draw/issues"
+  },
+  "homepage": "https://github.com/yourusername/koishi-plugin-labnana-draw#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "koishi": {
+    "description": {
+      "zh": "Labnana AI绘图插件，支持文生图和图生图功能",
+      "en": "Labnana AI drawing plugin with text-to-image and image-to-image support"
+    }
+  },
+  "peerDependencies": {
+    "koishi": "^4.17.0"
+  },
+  "devDependencies": {
+    "koishi": "^4.17.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "https-proxy-agent": "^7.0.0"
+  }
+}
